@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="50.0" endY="-50.0" layoutX="67.0" layoutY="496.0" />
+      <Line endY="-302.0" layoutX="118.0" layoutY="366.0" startY="80.0" />
+      <Line endY="50.0" layoutX="319.0" layoutY="63.0" />
+      <Line endX="90.0" endY="-58.0" layoutX="117.0" layoutY="120.0" />
+      <Line endX="100.0" layoutX="219.0" layoutY="63.0" startX="-100.0" />
+      <Line endX="-50.0" endY="-50.0" layoutX="168.0" layoutY="496.0" />
+      <Line endX="410.0" layoutX="109.0" layoutY="498.0" startX="-100.0" />
+      <Circle fill="WHITE" layoutX="319.0" layoutY="140.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="WHITE" layoutX="320.0" layoutY="220.0" radiusX="46.0" radiusY="54.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="343.0" layoutY="148.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="91.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="207.0" layoutY="148.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="91.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="283.0" layoutY="265.0" rotate="10.0" stroke="BLACK" strokeType="INSIDE" width="12.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="354.0" layoutY="264.0" rotate="-20.0" stroke="BLACK" strokeType="INSIDE" width="12.0" />
+      <Label layoutX="169.0" layoutY="509.0" prefHeight="27.0" prefWidth="61.0" text="Turn:" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="297.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="509.0" prefHeight="27.0" prefWidth="73.0" text="Player" AnchorPane.leftAnchor="246.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField layoutX="222.0" layoutY="560.0" />
+      <TextField layoutX="222.0" layoutY="616.0" />
+      <Button layoutX="434.0" layoutY="560.0" mnemonicParsing="false" text="Go" />
+      <Button layoutX="434.0" layoutY="616.0" mnemonicParsing="false" text="Go" />
+      <RadioButton layoutX="63.0" layoutY="564.0" mnemonicParsing="false" selected="true" text="Letter">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="guessOptions" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="63.0" layoutY="618.0" mnemonicParsing="false" text="Word" toggleGroup="$guessOptions">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Quit" />
+      <Label layoutX="196.0" layoutY="14.0" prefHeight="27.0" prefWidth="113.0" text="Round 1">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Text layoutX="280.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="_ _ _ _ _ _">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Label layoutX="181.0" layoutY="392.0" prefHeight="27.0" prefWidth="76.0" text="Word:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Text layoutX="280.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="_ _ _ _ _ _">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Label layoutX="180.0" layoutY="433.0" prefHeight="27.0" prefWidth="91.0" text="Misses:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

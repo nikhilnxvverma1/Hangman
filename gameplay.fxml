@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nikhil.lab3.Hangman">
+   <children>
+      <Line endX="50.0" endY="-50.0" layoutX="67.0" layoutY="496.0" />
+      <Line endY="-302.0" layoutX="118.0" layoutY="366.0" startY="80.0" />
+      <Line endY="50.0" layoutX="319.0" layoutY="63.0" />
+      <Line endX="90.0" endY="-58.0" layoutX="117.0" layoutY="120.0" />
+      <Line endX="100.0" layoutX="219.0" layoutY="63.0" startX="-100.0" />
+      <Line endX="-50.0" endY="-50.0" layoutX="168.0" layoutY="496.0" />
+      <Line endX="410.0" layoutX="109.0" layoutY="498.0" startX="-100.0" />
+      <Circle fx:id="head" fill="WHITE" layoutX="319.0" layoutY="140.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="torso" fill="WHITE" layoutX="320.0" layoutY="220.0" radiusX="46.0" radiusY="54.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle fx:id="rightHand" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="358.0" layoutY="181.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+      <Rectangle fx:id="leftHand" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="240.0" layoutY="181.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+      <Rectangle fx:id="leftLeg" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="283.0" layoutY="265.0" rotate="10.0" stroke="BLACK" strokeType="INSIDE" width="12.0" />
+      <Rectangle fx:id="rightLeg" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="98.0" layoutX="354.0" layoutY="264.0" rotate="-20.0" stroke="BLACK" strokeType="INSIDE" width="12.0" />
+      <Label layoutX="169.0" layoutY="509.0" prefHeight="27.0" prefWidth="61.0" text="Turn:" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="297.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerNameLabel" layoutX="246.0" layoutY="509.0" prefHeight="27.0" prefWidth="113.0" text="Player" AnchorPane.leftAnchor="246.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="letterTextField" layoutX="222.0" layoutY="560.0" />
+      <TextField fx:id="wordTextField" disable="true" layoutX="222.0" layoutY="616.0" />
+      <Button fx:id="letterGuessGoButton" layoutX="434.0" layoutY="560.0" mnemonicParsing="false" onAction="#guess" text="Go" />
+      <Button fx:id="wordGuessGoButton" disable="true" layoutX="434.0" layoutY="616.0" mnemonicParsing="false" onAction="#guess" text="Go" />
+      <RadioButton fx:id="letterRadioButton" layoutX="63.0" layoutY="564.0" mnemonicParsing="false" onAction="#toggleGuessOption" selected="true" text="Letter">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="guessOptions" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="wordRadioButton" layoutX="63.0" layoutY="618.0" mnemonicParsing="false" onAction="#toggleGuessOption" text="Word" toggleGroup="$guessOptions">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="gameplayQuitButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Quit" />
+      <Label fx:id="roundLabel" layoutX="196.0" layoutY="14.0" prefHeight="27.0" prefWidth="113.0" text="Round 1">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Text fx:id="wordText" layoutX="280.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="_ _ _ _ _ _">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Label layoutX="181.0" layoutY="392.0" prefHeight="27.0" prefWidth="76.0" text="Word:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Text fx:id="missesText" layoutX="280.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="_ _ _ _ _ _">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Label layoutX="180.0" layoutY="433.0" prefHeight="27.0" prefWidth="91.0" text="Misses:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="leftForearm" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="217.0" layoutY="148.0" rotate="70.6" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Rectangle fx:id="rightForearm" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="12.0" layoutX="376.0" layoutY="148.0" rotate="-63.4" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+   </children>
+</AnchorPane>

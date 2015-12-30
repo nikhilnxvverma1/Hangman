@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nikhil.lab3.Hangman">
+   <children>
+      <Label layoutX="142.0" layoutY="102.0" prefHeight="42.0" prefWidth="281.0" text="How many players:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalPlayersTextField" layoutX="216.0" layoutY="176.0" prefHeight="26.0" prefWidth="96.0" />
+      <Button fx:id="gameInfoGoButton" layoutX="246.0" layoutY="407.0" mnemonicParsing="false" onAction="#play" text="Go" />
+      <Button fx:id="gameInfoBackButton" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <TextField fx:id="totalRoundsTextField" layoutX="216.0" layoutY="324.0" prefHeight="26.0" prefWidth="96.0" />
+      <Label layoutX="142.0" layoutY="250.0" prefHeight="42.0" prefWidth="281.0" text="How many rounds:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

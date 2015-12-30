@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nikhil.lab3.Hangman">
+   <children>
+      <Label layoutX="167.0" layoutY="52.0" prefHeight="42.0" prefWidth="181.0" text="Instructions:" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="instructionsBackButton" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Label layoutX="21.0" layoutY="122.0" prefHeight="64.0" prefWidth="486.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="125.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The word to guess is represented by a row of dashes, representing each letter of the word. Words you cannot use include proper nouns such as names, places, and brands. If the guessing player suggests a letter which occurs in the word, the other player writes it in all its correct positions. If the suggested letter or number does not occur in the word, the other player draws one element of a hanged man stick figure as a tally mark. The game is over when:The guessing player completes the word, or guesses the whole word correctly.The other player completes the diagram" wrappingWidth="265.6829261779785" />
+   </children>
+</AnchorPane>

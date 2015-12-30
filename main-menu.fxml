@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nikhil.lab3.Hangman">
+   <children>
+      <Button fx:id="playButton" layoutX="228.0" layoutY="215.0" mnemonicParsing="false" onAction="#play" text="Play" />
+      <Button fx:id="instructionsButton" layoutX="206.0" layoutY="277.0" mnemonicParsing="false" onAction="#instructions" text="Instructions" />
+      <Button fx:id="exitButton" layoutX="228.0" layoutY="334.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <Label layoutX="146.0" layoutY="46.0" text="Hangman">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

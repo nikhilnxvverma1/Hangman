@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nikhil.lab3.Hangman">
+   <children>
+      <Label layoutX="228.0" layoutY="14.0" prefHeight="27.0" prefWidth="71.0" text="Score">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="scoreboard" layoutX="111.0" layoutY="88.0" prefHeight="200.0" prefWidth="317.0">
+        <columns>
+          <TableColumn fx:id="playerColumn" prefWidth="160.0" text="Player" />
+          <TableColumn fx:id="scoreColumn" prefWidth="156.0" text="Score" />
+        </columns>
+      </TableView>
+      <Button fx:id="scoreMainMenuButton" layoutX="235.0" layoutY="523.0" mnemonicParsing="false" onAction="#back" text="Main menu" />
+   </children>
+</AnchorPane>
